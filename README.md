@@ -17,7 +17,7 @@ Currently only a Python class, but a cpp and javascript class will be added soon
       "id": 1,
       "email": "info@Email.com",
       "first_name": "Developer",
-      "last_name": "Jaro",
+      "last_name": "VLT",
       "address_list": 1,
       "payment_list": 1,
       "user_list": 1
