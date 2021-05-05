@@ -2,6 +2,8 @@
 
 Turn a JSON string into either a plain HTML form or a ReactJS component complete with states and a hooked up submit button that returns the form data to the parent.
 
+Feed a JSON response from a REST request and create a form! 
+
 Currently only a Python class, but a cpp and javascript class will be added soon.
 
 ## Creates:
