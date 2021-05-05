@@ -1,6 +1,6 @@
 # Description
 
-Turn a JSON string into either a plain HTML form or a ReactJS component complete with states hooked up submit button that returns the form data to the parent.
+Turn a JSON string into either a plain HTML form or a ReactJS component complete with states and a hooked up submit button that returns the form data to the parent.
 
 Currently only a Python class, but a cpp and javascript class will be added soon.
 
@@ -13,12 +13,12 @@ Currently only a Python class, but a cpp and javascript class will be added soon
 
 ### Python:
 
-Clone the `py` folder to your app, or rename it to whatever you want, just make sure you update the import statement in this example.
+Clone the `py.JsonHTML` folder to your app, or rename it to whatever you want, just make sure you update the import statement in this example.
 
 #### Simple Usage:
 
 ```python
-from py.jsontohtmlform import JSONToHTMLForm 
+from JsonHTML.jsontohtmlform import JSONToHTMLForm 
 
 jstest = '{      "id": 32,      "link": "https://www.target.com/p/funko-pop-games-pokemon-10-34-cubone/-/A-79641748#lnk=sametab",      "shipping_type": "Ship",      "wait_time": "1",      "crawl_queue": 4,      "vendor": 1,      "amount": 1,      "status": 0,"desciption": "Cubone Pop Figure"}'
 
