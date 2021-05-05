@@ -6,12 +6,28 @@ Feed a JSON response from a REST request and create a form!
 
 Currently only a Python class, but a cpp and javascript class will be added soon.
 
-![Preview Image](https://github.com/vltmedia/JSONtoHTMLReactJS/blob/master/images/form_preview.png?raw=true)
 
-## Creates:
 
+
+
+
+## From:
+```json
+	{
+      "id": 1,
+      "email": "info@Email.com",
+      "first_name": "Developer",
+      "last_name": "Jaro",
+      "address_list": 1,
+      "payment_list": 1,
+      "user_list": 1
+    }
+```
+
+## To:
 - HTML Form
 - ReactJS component
+![Preview Image](https://github.com/vltmedia/JSONtoHTMLReactJS/blob/master/images/form_preview1.png?raw=true)
 
 # Quick Start
 
