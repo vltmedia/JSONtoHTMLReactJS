@@ -1,0 +1,35 @@
+.$FORMNAME_Form_Container {
+    background-color: #000100;
+    align-items: start;
+  }
+  .$FORMNAME_label {
+    color: white;
+    text-align: start;
+    align-self: start;
+  }
+  
+  .Form_Container {
+    
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .$FORMNAMEnputKey {
+    margin: auto;
+    margin-top: 5px;
+    text-align: start;
+    width: 50%;
+    
+  }
+  .$FORMNAME_inputholder {
+    text-align: start;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .inputKey{
+    width: 100%;
+  }
+  
