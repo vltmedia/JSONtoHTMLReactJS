@@ -9,7 +9,7 @@ def TestCase():
     # Create the class instance.
     # JSONToHTMLForm(jsonstring, formName, htmlType)
     # htmlType can be 'html' or 'react'. If react, this creates a React Component.
-    jsonhtml = JSONToHTMLForm(jstest, 'Crawl Setting', 'react')
+    jsonhtml = JSONToHTMLForm(jstest, 'Crawl Setting', 'react', True)
     
     # Writes either an index.html or index.js, and a style.css  in a folder named after the formName you passed in previously. Give it a folder path to create the new folder and write the files to.
     jsonhtml.WriteFiles('D:\Projects\Apps\PythonScripts\py\JsonHTML')

@@ -5,11 +5,12 @@ js = '{      "id": 32,      "link": "https://www.target.com/p/funko-pop-games-po
 class JSONToHTMLForm:
     
     # Pass in Json string, then either 'react' or 'html' to get back either plain HTML form, or a React Component.
-    def __init__(self, json_data, formname, htmlType):
+    def __init__(self, json_data, formname, htmlType, isForm):
         self.currentpath =  os.path.abspath(__file__)
         self.dirpath = os.path.dirname(self.currentpath) +"/"
         
         
+        self.isForm = isForm
         self.json_data = json_data
         self.htmlType = htmlType
         self.FormName = formname.replace(' ', '_')
@@ -24,6 +25,10 @@ class JSONToHTMLForm:
         # Templates
         self.HTMLInputTemplate = '<div className="'+self.FormName+'_$KEY_container '+self.FormName+'_inputholder"><label  className="'+self.FormName+'_$KEY_label '+self.FormName+'_label" for="$KEY">$KEY:</label><br><input  className="'+self.FormName+'_$KEY_input '+self.FormName+'inputKey"  type="$TYPE" id="$KEY" name="$KEY" placeholder="$VALUE"><br></div>'
         self.HTMLInputTemplateReact = '<div className="'+self.FormName+'_$KEY_container '+self.FormName+'_inputholder"><label className="'+self.FormName+'_$KEY_label '+self.FormName+'_label" >$KEY:</label><br/><input onChange={e => this.setState({$KEY : e.target.value})} className="'+self.FormName+'_$KEY_input '+self.FormName+'inputKey" type="$TYPE" id="$KEY" name="$KEY" placeholder="$VALUE"/><br/></div>'
+        
+        if not isForm:
+            self.HTMLInputTemplateReact = '<div className="'+self.FormName+'_$KEY_container '+self.FormName+'_inputholder"><label className="'+self.FormName+'_$KEY_label '+self.FormName+'_label" >$KEY:</label><br/><label className="'+self.FormName+'_$KEY_value '+self.FormName+'valueKey_$TYPE" id="$KEY" name="$KEY">$VALUE</label><br/></div>'
+        
         self.ReactStateObj = {}        
         self.ReactTemplatePath = self.dirpath + 'reactcomponentFormTemplate.js'
         self.ReactCSSTemplatePath = self.dirpath + 'reactcomponentcssTemplate.css'

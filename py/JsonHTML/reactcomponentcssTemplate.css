@@ -1,48 +1,70 @@
 .$FORMNAME_Form_Container {
-    background-color: #000100;
-    align-items: start;
-    border: 5px dashed grey;
-  }
-  .$FORMNAME_label {
-    color: white;
-    text-align: start;
-    align-self: start;
-    width: 100%;
-    text-transform: capitalize;
-  }
-  
-  .$FORMNAME_Form_Container {
-    align-items: center;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .$FORMNAME_Form_Header {
-    color: white;
-    width: 100%;
-    text-transform: capitalize;
-  }
+  background-color: #000100;
+  align-items: start;
+  border: 5px dashed grey;
+}
+.$FORMNAME_label {
+  color: white;
+  text-align: start;
+  align-self: start;
+  width: 100%;
+  text-transform: capitalize;
+}
 
-  .$FORMNAME_inputholder {
-    text-align: start;
-    width: 50%;
-    margin: auto;
-    margin-top: 8px;
-    display: flow-root;
-  }
-  
-  .$FORMNAMEinputKey{
-    margin: auto;
-    margin-top: 1px;
-    width: 100%;
-  }
+.$FORMNAME_Form_Container {
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.$FORMNAME_Form_Header {
+  color: white;
+  width: 100%;
+  text-transform: capitalize;
+}
 
-  .$FORMNAME_submitbutton {
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 3em;
-    width: 50%;
-  }
-  
-  
+.$FORMNAME_inputholder {
+  text-align: start;
+  width: 50%;
+  margin: auto;
+  margin-top: 8px;
+  display: flow-root;
+}
+
+.$FORMNAMEinputKey{
+  margin: auto;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.$FORMNAME_valueholder {
+  color: #blue;
+  text-align: start;
+  width: 50%;
+  margin: auto;
+  margin-top: 8px;
+  display: flow-root;
+}
+
+.$FORMNAMEvalueKey{
+  color: #blue;
+  margin: auto;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.$FORMNAMEvalue{
+  color: #blue;
+  margin: auto;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.$FORMNAME_submitbutton {
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  width: 50%;
+}
+
